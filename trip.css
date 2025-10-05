@@ -1,0 +1,786 @@
+/* Body */
+body {
+  font-family: 'Gabarito', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.nav-menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.options-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dropdown-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+select {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+.sign-in {
+  background-color: black;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Where to Section */
+.where-to {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.where-to h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Search Section */
+.search-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 50%;
+  max-width: 600px;
+}
+
+.search-box i {
+  color: #00af87;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Other Options Buttons */
+.other-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.other-options a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  background-color: #e5f8f2;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.other-options a:hover {
+  background-color: #00af87;
+  color: white;
+}
+
+/* Photo Section */
+.photo-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-container {
+  position: relative;
+  width: 50%;
+  max-width: 1200px;
+}
+
+.main-photo {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo on Photo */
+.photo-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+  background-color: yellow;
+}
+
+.photo-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Text on Photo */
+.photo-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.photo-text h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.photo-text p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Awards Section Below Photo */
+.awards-section {
+  background-color: #f0fdf9;
+  padding:  20px;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+
+}
+
+.awards-section h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #000;
+  font-weight: 700;
+}
+
+.awards-section p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Categories Cards Layout */
+.award-categories-cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card */
+.category-card {
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Hover effect */
+.category-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+/* Experiences Section */
+.experiences-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.experiences-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.experiences-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Experiences Cards Layout */
+.experience-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card */
+.experience-card {
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.experience-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Hover effect */
+.experience-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+/* Inspiration Section */
+.inspiration-section {
+  padding: 60px 20px;
+  background-color: #f0fdf9; /* light green background */
+  text-align: center;
+}
+
+.inspiration-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.inspiration-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Cards Layout */
+.inspiration-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card */
+.inspiration-card {
+  width: 240px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.inspiration-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inspiration-card h3 {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Hover effect */
+.inspiration-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Things to Do Section */
+.things-to-do-section {
+  padding: 60px 20px;
+  background-color: #fff; /* white background */
+  text-align: center;
+}
+
+.things-to-do-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.things-to-do-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Cards Layout */
+.things-to-do-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card */
+.things-card {
+  width: 220px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.things-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.things-card p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Hover effect */
+.things-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+/* Weekend Getaways Section */
+.weekend-getaways-section {
+  padding: 60px 20px;
+  background-color: #f0fdf9; /* light green background */
+  text-align: center;
+}
+
+.weekend-getaways-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.weekend-getaways-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Getaways Cards Layout */
+.getaways-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card */
+.getaway-card {
+  width: 220px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.getaway-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.getaway-card p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Hover effect */
+.getaway-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+/* Iconic Places Section */
+.iconic-places-section {
+  padding: 60px 20px;
+  background-color: #fff; /* white background */
+  text-align: center;
+}
+
+.iconic-places-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.iconic-places-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Iconic Places Cards Layout */
+.iconic-places-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card */
+.place-card {
+  width: 220px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.place-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Hover effect */
+.place-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.travellers-choice-section {
+  background-image: url("img/train.jpg"); /* your bright image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: #000; /* dark text looks better on bright image */
+  position: relative;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Optional very light overlay for readability */
+.travellers-choice-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* light bright overlay */
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.travellers-choice-container {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+/* Tripadvisor Logo */
+.travellers-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Heading & Text */
+.travellers-choice-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.travellers-choice-section p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.see-winners-btn {
+  background-color: #00af87;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.see-winners-btn:hover {
+  background-color: #00775f;
+}
+
+/* Themed Collections Section */
+.themed-collections-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.themed-collections-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Collection Cards Layout */
+.collection-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card */
+.collection-card {
+  width: 220px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.collection-card h3 {
+  margin: 12px 10px 6px 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.collection-card p {
+  margin: 0 10px 12px 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Hover effect */
+.collection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer Section */
+.tripadvisor-footer {
+  background-color: black;/* Tripadvisor dark blue */
+  color: #fff;
+  padding: 60px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 180px; /* responsive width */
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.footer-column a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #00af87;
+}
+
+/* Social media icons inside footer */
+.social-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00af87;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  transform: scale(1.1);
+  background-color: #00775f;
+}
+
+/* Bottom Legal Section */
+.tripadvisor-legal-section {
+  background-color: #f1f1f1;
+  color: #555;
+  font-size: 12px;
+  padding: 40px 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.legal-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.legal-links {
+  margin: 10px 0 20px 0;
+}
+
+.legal-links a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+.legal-text {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+/* Hidden content initially */
+.more-legal {
+  display: none;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #00775f;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.read-more-btn:hover {
+  color: #004d3a;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-column {
+    margin-bottom: 20px;
+  }
+  .footer-social-icons {
+    margin-top: 10px;
+  }
+}
