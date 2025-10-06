@@ -34,3 +34,24 @@ How to design responsive layouts using Tailwind’s utility classes
 How to position text overlays inside images effectively
 
 How to organize sections like “Hotels”, “Things to Do”, and “Restaurants” cleanly
+
+
+<Folder Structure>
+tripadvisor-clone
+index.html
+style.css
+tailwind.config.js
+/images
+(backgrounds, icons, and hero section images)
+README.md
+
+
+
+
+🪪 License
+This project is open source and available under the MIT License.
+
+👨‍💻 Author
+Chandru Balasubramanian
+🌐 YouTube: ridechandru88
+💼 Profession: Front-End Developer & Travel Vlogger
